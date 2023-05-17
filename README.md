@@ -4,6 +4,7 @@
 ## ex 1
 ***bash
 
+
 jerom@DESKTOP-DNB8MV2 MINGW64 ~
 $ git config --global user.name "divine"
 
@@ -22,7 +23,7 @@ Initialized empty Git repository in G:/gittrain/.git/
 
 jerom@DESKTOP-DNB8MV2 MINGW64 /g/gittrain (master)
 $ git brancch
-git: 'brancch' is not a git command. See 'git --help'
+git: 'brancch' is not a git command. See 'git --help'.
 
 The most similar command is
         branch
@@ -407,5 +408,40 @@ $ git branch
   main
 
 jerom@DESKTOP-DNB8MV2 MINGW64 /g/gittrain (dev)
+$ ^C
+
+jerom@DESKTOP-DNB8MV2 MINGW64 /g/gittrain (dev)
 $
+
+jerom@DESKTOP-DNB8MV2 MINGW64 /g/gittrain (dev)
+$ git switch main
+Switched to branch 'main'
+
+jerom@DESKTOP-DNB8MV2 MINGW64 /g/gittrain (main)
+$ git switch main
+Already on 'main'
+
+jerom@DESKTOP-DNB8MV2 MINGW64 /g/gittrain (main)
+$ git pull --rebase origin main
+From https://github.com/mutonidivine-123/Gym-Git-Exercise-Solution-
+ * branch            main       -> FETCH_HEAD
+Successfully rebased and updated refs/heads/main.
+
+jerom@DESKTOP-DNB8MV2 MINGW64 /g/gittrain (main)
+$ git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.28 KiB | 131.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/mutonidivine-123/Gym-Git-Exercise-Solution-
+   cc2e99f..aee3035  main -> main
+branch 'main' set up to track 'origin/main'.
+
+jerom@DESKTOP-DNB8MV2 MINGW64 /g/gittrain (main)
+$ ^C
+
+jerom@DESKTOP-DNB8MV2 MINGW64 /g/gittrain (main)
+
 ***
